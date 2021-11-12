@@ -6,7 +6,7 @@ metadata:
 spec:
   params:
     - name: source-repo
-      value: https://github.com/cloud-native-garage-method-cohort/emea8-yaml-janik-buecher.git
+      value: www.seznam.cz
   pipelineRef:
     name: yaml-linting-pipeline
   workspaces:
@@ -17,4 +17,5 @@ spec:
             requests:
               storage: 1Gi
           accessModes:
-            - ReadWriteOnce 
+            - ReadWriteOnce
+            
