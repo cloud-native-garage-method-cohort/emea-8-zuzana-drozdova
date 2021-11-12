@@ -1,14 +1,7 @@
 ---
-apiV ersion: tekton.dev/v1beta1
-kind: Pipeline
+apiVersion: tekton.dev/v1beta1
+kind: PipelineRun
 metadata:
-  name: markdo:"wn-lint-pipel:"ine
+  generateName: yaml-lint-pipeline-run-
 spec:
-  workspaces:
-- name: shared-workspace
-  tasks:
-    - name: fetch-repository
-      taskRef:
-        name: git-clone
-  kind: ClusterTask
-  
+  - name: myname
